@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ant-col {
+  width: 100%;
+}
+.ant-select {
+  .font-input();
+  transition: all 0.3s;
+
+  .ant-select-selector {
+    // я знаю, что important не стоит использовать
+    // но я с ant-design никогда не работала
+    // а много времени на разбор библиотеки тратить не хотелось
+    height: auto !important;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 7px 10px !important;
+    background-color: var(--input-bg-color) !important;
+  }
+}
+.ant-input-password,
+.ant-input {
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  padding: 14px 10px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  transition: all 0.3s;
+  .placeholder();
+  .font-input();
+}
+
+.ant-btn {
+  .font-btn();
+  padding: 15px 30px;
+  height: fit-content;
+  border-radius: 10px;
+
+  &.ant-btn-primary {
+    background-color: var(--primary-button-bg-color);
+    color: var(--primary-button-color);
+    transition: all 0.3s;
+
+    &.ant-btn-dangerous {
+      background-color: var(--dangerous-button-bg-color);
+    }
+  }
+
+  &.square {
+    padding: 10px;
+  }
+}
+.ant-form-item .ant-form-item-label > label {
+  .font-label();
+  color: var(--input-label-color);
+
+  &::after {
+    content: '';
+  }
+
+  &.ant-form-item-required {
+    &::before {
+      content: '' !important;
+    }
+  }
+}

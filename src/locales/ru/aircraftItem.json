@@ -1,0 +1,32 @@
+{
+  "aircraftItem": {
+    "description": "Описание авиапоставщика",
+    "availableAirlines": "Доступные авиакомпании",
+    "providerKey": "Ключ поставщика",
+    "typeCompany": "Тип компании",
+    "secretKey": "Secret Key",
+
+    "errors": {
+      "description": {
+        "required": "Описание авиапоставщика обязательно",
+        "max": "Описание не должно превышать {max} символов"
+      },
+      "providerKey": {
+        "required": "Ключ поставщика обязателен",
+        "max": "Ключ поставщика не должен превышать {max} символов"
+      },
+      "availableAirlines": {
+        "required": "Авиакомпании обязательны",
+        "pattern": "Авиакомпании должны разделяться ';'"
+      },
+      "typeCompany": {
+        "required": "Ключ поставщика обязателен"
+      },
+      "secretKey": {
+        "required": "Secret Key обязателен",
+        "max": "Описание не должно превышать {max} символов",
+        "pattern": "Secret Key должен содержать только латинские буквы и цифры"
+      }
+    }
+  }
+}

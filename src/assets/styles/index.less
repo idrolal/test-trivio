@@ -1,0 +1,34 @@
+@import './fonts.less';
+@import './reset.less';
+
+:root {
+  --font-family: Roboto, sans-serif;
+  --padding-inline: 94px;
+
+  /* colors */
+  --black-900: #050505;
+  --white-100: #ffffff;
+
+  /* blue */
+  --blue-50: #f6f8fc;
+  --blue-100: #e6eef5;
+  --blue-600: #4361ee;
+
+  /* blue-gray */
+  --blue-gray-300: #b3c1d1;
+
+  /* red */
+  --red-700: #d80027;
+}
+
+@media (max-width: @tablets) {
+  :root {
+    --padding-inline: 14px;
+  }
+}
+
+@media (max-width: @medium-desktops) {
+  :root {
+    --padding-inline: 24px;
+  }
+}
